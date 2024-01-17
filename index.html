@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+<h1>
+        KOMMUNEVALG 2024
+</h1>
+<h2>
+       ERIKSTAD KOMMUNE-RESULTATER 
+</h2>
+
+
+
+
+
+  
+<div class="logo-bilder">
+   <!-- Logoer for ulike politiske partier -->
+   <div></div>
+     <img src="../medier/logo/AP-logo.png" alt="" width="7%">
+        <img src="../medier/logo/HP-logo.png" alt="" width="7%">
+        <img src="../medier/logo/senterpartiet-logo.png" alt="" width="7%">
+        <img src="../medier/logo/Fremskrittspartiet_logo.webp" alt="" width="25%">
+        <img src="../medier/logo/MDG_logo.png" alt="" width="10%">
+
+</div>
+  
+
+
+
+<div id="app">
+   <!-- Stemmeapplikasjonen -->
+  <div id="votingForm">
+
+      <label for="partySelect">Velg politisk parti:</label>
+      <select id="partySelect">
+        <option value="Arbeidpartiet">Arbeidpartiet</option>
+          <option value="Høyre">Høyre</option>
+          <option value="Senterpartiet">Senterpartiet</option>
+          <option value="Fremskrittspartiet">Fremskrittspartiet</option>
+          <option value="Miljøpartiet de grønne">Miljøpartiet de grønne</option>          
+      </select>
+
+      
+      <button onclick="vote()">Stem</button>
+  </div>
+   <!-- Container for stemmeresultater og diagram -->
+  <div id="voteResults">
+      <canvas id="chart"></canvas>
+  </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
